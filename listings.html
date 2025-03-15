@@ -57,16 +57,23 @@
             }
             .car-itemphoto {
    
-            width: 30%;
-            
+            width: 500px;
             text-align: center;
-            }
+            display: inline-block;
+            
+            
+           }
+           .car-itemphoto ul{
+            display: flex;
+            overflow-y: hidden;
+            border-color: black;
+            border-width: 10px;
+           }
             .about{
                 background-color: #333;
                 color: white;
                 text-align: center;
                 padding: 10px;
-                
                 width: 100%;
                 bottom: 0;
             }
@@ -88,17 +95,29 @@
             <input type="range" id="price" min="10000" max="100000" value="50000">
         </div>
 
-        <div class="cars">
-            <div class="car-itemphoto">
-                <img src="OIP (1).jpg" alt="Car 1">
-                <h3>Toyota Rumion 1.5</h3>
-                <p>2,00000</p>
-            </div>
-            <div class="car-itemphoto">
-                <img src="OIP.jpg" alt="Car 2">
-                <h3>Toyota Corolla facelift (2017) </h3>
-                <p>1,50000</p>
-            </div>
+        <div class="car-itemphoto">
+           <center>
+           <ul>
+            <img src="WhatsApp Image 2025-03-15 at 12.26.14 PM (1).jpeg" class="car-itemphoto">
+            <img src="WhatsApp Image 2025-03-15 at 12.26.14 PM.jpeg" class="car-itemphoto">
+           </ul>
+           <p>Bolero B6</p>
+           <p>2020
+            Owner 2
+            Insurance live</p>
+           </center>
+        
+        
+            <center>
+            <ul>
+             <img src="WhatsApp Image 2025-03-15 at 12.27.27 PM.jpeg" class="car-itemphoto">
+             <img src="WhatsApp Image 2025-03-15 at 12.27.28 PM.jpeg" class="car-itemphoto">
+            </ul>
+            <p>suzuki dzire</p>
+            <p>2024
+                Single owner 
+                Insurance live</p>
+            </center>
         </div>
     </section>
 
