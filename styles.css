@@ -13,6 +13,7 @@ header {
 header nav ul {
     list-style: none;
     padding: 0;
+
 }
 
 header nav ul li {
@@ -35,10 +36,10 @@ header nav ul li a {
     padding: 20px;
 }
 
-.car-item {
+.car-itemphoto {
     display: inline-block;
     width: 30%;
-    margin: 10px;
+    
     text-align: center;
 }
 
@@ -47,7 +48,7 @@ header nav ul li a {
     height: auto;
 }
 
-footer {
+.about{
     background-color: #333;
     color: white;
     text-align: center;
@@ -55,4 +56,15 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+.header-slider ul{
+    display: flex;
+    overflow-y: hidden;
+}
+.header-img{
+    max-width: 500px;
+}
+.header-slider a{
+    position: absolute;
+
 }

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <header>
+    <center>
+        <h1>SK Car Saler</h1>
+        </center>
+        <nav>
+            <ul>
+        
+                <center>
+                <li><a href="index.html">Home |</a></li>
+                <li><a href="listings.html">Car Listings |</a></li>
+                <li><a href="contact.html">Contact |</a></li>
+                <li><a href="account.html">Create Your Account</a></li>
+    </center>
+            </ul>
+        </nav>
+    </header>
+    <style>
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            
+
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+
+        }
+
+        header nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8f9fa;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h2 {
+            color: #2c2c6c;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4c4c9d;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #38387a;
+        }
+        .error {
+            color: red;
+            font-size: 12px;
+        }
+        .about{
+                background-color: #333;
+                color: white;
+                text-align: center;
+                padding: 10px;
+                position: fixed;
+                width: 100%;
+                bottom: 0;
+         }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Create Your Account</h2>
+    <form id="registerForm">
+        <input type="text" id="username" placeholder="User Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+        <p class="error" id="errorMsg"></p>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<script>
+    document.getElementById("registerForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        
+        let username = document.getElementById("username").value;
+        let email = document.getElementById("email").value;
+        let password = document.getElementById("password").value;
+        let confirmPassword = document.getElementById("confirmPassword").value;
+        let errorMsg = document.getElementById("errorMsg");
+
+        if (password !== confirmPassword) {
+            errorMsg.textContent = "Passwords do not match!";
+            return;
+        }
+
+        errorMsg.textContent = "";
+        alert(`User Registered:\nName: ${username}\nEmail: ${email}`);
+    });
+</script>
+
+<div class="about">
+    <p>SK CAR SALER</p>
+    <p>&copy; 2025 SK Car Saler. All Rights Reserved.</p>
+</div>
+
+</body>
+</html>

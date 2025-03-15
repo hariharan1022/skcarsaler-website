@@ -1,4 +1,5 @@
 <script>
+
     document.getElementById('make').addEventListener('change', function() {
         var selectedMake = this.value;
         // Here, you would filter the car listings based on the selected make
